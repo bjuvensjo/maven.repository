@@ -36,4 +36,4 @@ VOLUME $REPOSITORY_HOME
 
 EXPOSE 8080
 
-ENTRYPOINT ["sh", "-c", "cd $JETTY_HOME; java -DrootPath=$REPOSITORY_HOME -DuseRootRelativePath=true -jar start.jar"]
+ENTRYPOINT ["sh", "-c", "cd $JETTY_HOME; java -DrootPath=$REPOSITORY_HOME -jar start.jar"]
