@@ -13,7 +13,7 @@ appender("STDOUT", ConsoleAppender) {
     }
 }
 
-def log_home = System.getenv().get("REPOSITORY_HOME") ?: System.getenv().get("JETTY_HOME")
+def log_home = System.getenv().get("IMAGE_HOME") ?: System.getenv().get("JETTY_HOME")
 appender("FILE", FileAppender) {
     file = "${log_home}/repository.log"
     immediateFlush = true
